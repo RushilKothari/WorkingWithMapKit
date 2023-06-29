@@ -11,6 +11,9 @@
 		CE4877BC2A4024EC0035A93D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877BB2A4024EC0035A93D /* ContentView.swift */; };
 		CE4877BE2A4024ED0035A93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4877BD2A4024ED0035A93D /* Assets.xcassets */; };
 		CE4877C12A4024ED0035A93D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4877C02A4024ED0035A93D /* Preview Assets.xcassets */; };
+		CE57B0972A42177700BD926A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57B0962A42177700BD926A /* ContentViewModel.swift */; };
+		CE57B09D2A42417E00BD926A /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57B09C2A42417E00BD926A /* MapSearchView.swift */; };
+		CE57B09F2A42441C00BD926A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57B09E2A42441C00BD926A /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		CE4877BB2A4024EC0035A93D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE4877BD2A4024ED0035A93D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4877C02A4024ED0035A93D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE57B0962A42177700BD926A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CE57B09C2A42417E00BD926A /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
+		CE57B09E2A42441C00BD926A /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		CE4877B82A4024EC0035A93D /* WorkingWithMapKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE57B0982A42368400BD926A /* View */,
+				CE57B0992A4236A400BD926A /* ViewModel */,
 				CE4877B92A4024EC0035A93D /* WorkingWithMapKitApp.swift */,
 				CE4877BB2A4024EC0035A93D /* ContentView.swift */,
+				CE57B0962A42177700BD926A /* ContentViewModel.swift */,
 				CE4877BD2A4024ED0035A93D /* Assets.xcassets */,
 				CE4877BF2A4024ED0035A93D /* Preview Content */,
 			);
@@ -65,6 +74,22 @@
 				CE4877C02A4024ED0035A93D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE57B0982A42368400BD926A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE57B09C2A42417E00BD926A /* MapSearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE57B0992A4236A400BD926A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE57B09E2A42441C00BD926A /* MapViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE57B09D2A42417E00BD926A /* MapSearchView.swift in Sources */,
+				CE57B09F2A42441C00BD926A /* MapViewModel.swift in Sources */,
 				CE4877BC2A4024EC0035A93D /* ContentView.swift in Sources */,
 				CE4877BA2A4024EC0035A93D /* WorkingWithMapKitApp.swift in Sources */,
+				CE57B0972A42177700BD926A /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +298,7 @@
 				DEVELOPMENT_TEAM = 69P68D8T9Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to enable you to find pet services in your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +328,7 @@
 				DEVELOPMENT_TEAM = 69P68D8T9Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to enable you to find pet services in your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
